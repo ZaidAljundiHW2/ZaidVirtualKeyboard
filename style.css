@@ -1,0 +1,23 @@
+* {
+    background-color: rgb(44, 43, 43);
+}
+
+
+
+.kbp {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+}
+
+.kbp h1 {
+    background-color: inherit;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
