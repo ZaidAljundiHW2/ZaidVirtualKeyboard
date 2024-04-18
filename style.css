@@ -2,7 +2,10 @@
     background-color: rgb(44, 43, 43);
 }
 
-
+#keyboard {
+    position: absolute;
+    margin: 200px;
+}
 
 .kbp {
     background-color: red;

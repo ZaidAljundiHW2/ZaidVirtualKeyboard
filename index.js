@@ -8,7 +8,7 @@ let divsArr = [];
 let charsST = "w e r t y u i o p a s d f g h j k l BKSP z x c v b n m ENTR";
 let charsArr = charsST.split(" ");
 
-let leftPosition = rect.right + 10; // Initial left position
+let leftPosition = rect.right; // Initial left position
 
 for (var i = 0; i < charsArr.length; i++) {
     divsArr[i] = document.createElement("div");
@@ -38,7 +38,7 @@ for (var i = 0; i < charsArr.length; i++) {
           leftPosition = 0;
         }
         divsArr[i].style.position = "absolute";
-        divsArr[i].style.top = rect.bottom * 1.07 + "px";
+        divsArr[i].style.top = rect.bottom + "px";
         divsArr[i].style.left = leftPosition + "px";
         divsArr[i].style.marginLeft = "30px";
         leftPosition += divsArr[i].offsetWidth + 60;
@@ -48,7 +48,7 @@ for (var i = 0; i < charsArr.length; i++) {
     else {
       // Position each div to the right of the previous one
       divsArr[i].style.position = "absolute";
-      divsArr[i].style.top = rect.top + "px";
+      divsArr[i].style.top = rect.top - 8 + "px";
       divsArr[i].style.left = leftPosition + "px";
 
       // Update the left position for the next div
